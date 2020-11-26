@@ -1,0 +1,75 @@
+<!doctype html>
+<charset=utf-8>
+<title>Connect</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+<body>
+	<div class="gravatar">
+		<a href="http://craniumconnect.com">
+			<img width="80" height="80" src="connect.png" />
+		</a>
+	</div>
+	<div class="filter_box">
+		<form>
+			 Wat is je klus? <input type="text" class="filter" />
+		</form>
+	</div>
+	<ul class="level_0">
+		<li>
+			<h2 style="border-bottom-color:#B65051">Microsoft Partners</h2>
+			<ul class="level_1">
+				<li><a href="https://cloudblogs.microsoft.com/dynamics365/no-audience/2019/10/10/defining-customer-experience-and-customer-engagement/">CX Development</a></li>
+					<li><a href="https://cloudblogs.microsoft.com/dynamics365/no-audience/2019/10/10/defining-customer-experience-and-customer-engagement/">UX Consult</a></li>
+				<li><a href="https://www.dynamicshub.nl/cxlab/">CX Consult</a></li>
+					<li><a href="https://www.dynamicshub.nl/cxlab/">UX Development</a></li>
+				<li><a href="https://www.office.com/?omkt=nl-NL">Digital Office 365</a></li>
+					<li><a href="https://dynamics.microsoft.com/nl-nl/customer-service/overview/?">CRM</a></li>
+			</ul>
+		</li>
+		<li>
+			<h2 style="border-bottom-color:#8c03c2">Media Partners</h2>
+			<ul class="level_1">
+				<li><a href="https://zoneslifestyle.com/over-zones">Kantoor Concepten</a></li>
+					<li><a href="https://www.zorgvisie.nl/epd-overzicht">Digitaal Medisch Dossier</a></li>
+				<li><a href="https://www.digitaleoverheid.nl">Digitale Overheid</a></li>
+					<li><a href="https://www.citizenlab.co/">Digitale Democratie</a></li>
+				<li><a href="https://www.politie.nl/themas/cybercrime.html">Digitale Criminelen</a></li>
+					<li><a href="https://www.rijksoverheid.nl/actueel/nieuws/2020/10/01/nederlanders-overschatten-hun-kennis-van-risico-digitale-en-online-veiligheid">Digitale Veiligheid</a></li>
+			</ul>
+		</li>
+		<li>
+			<h2 style="border-bottom-color:#00AEFF">Third Tier Partners</h2>
+			<ul class="level_1">
+				<li><a href="https://www.dynamicshub.nl/cxlab/">Future-proof E-commerce</a></li>
+					<li><a href="https://www.dynamicshub.nl/cxlab/">Object Distributed Architectures</a></li>
+				<li><a href="https://www.dynamicshub.nl/cxlab/">Safe Payment Processing</a></li>
+					<li><a href="https://www.dynamicshub.nl/cxlab/">Medical Monitoring Wearables</a></li>
+				<li><a href="https://www.dynamicshub.nl/cxlab/">Future-proof Banking</a></li>
+					<li><a href="https://www.dynamicshub.nl/cxlab/">Future-proof Asset Management</a></li>
+			</ul>
+		</li>
+		<li>
+			<h2 style="border-bottom-color:#29a50a">Freewheel Partners</h2>
+			<ul class="level_1">
+				<li><a href="https://www.dynamicshub.nl/cxlab/">Digital Body Language for Business</a></li>
+					<li><a href="https://www.dynamicshub.nl/cxlab/">Digital Presence and Company Branding</a></li>
+				<li><a href="https://www.dynamicshub.nl/cxlab/">Kansen voor het MKB met API</a></li>
+					<li><a href="https://www.dynamicshub.nl/cxlab/">Werken op afstand en Human Resource vraagstukken</a></li>
+				<li><a href="https://www.dynamicshub.nl/cxlab/">Masterclass Concurreren met Internet</a></li>
+					<li><a href="https://www.dynamicshub.nl/cxlab/">Digitaal Criminaliteit melden en ondersteuning</a></li>
+			</ul>
+		</li>
+		
+	</ul>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="quicksearch.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('a').each(function(){
+				$(this).attr('target','_blank');
+			});
+			$('input.filter').quicksearch('.level_1 li');
+			$('input.filter').focus();
+		});
+	</script>
+</body>
